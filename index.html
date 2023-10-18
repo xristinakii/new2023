@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>xristinakii's Gallery</title>
+  
+ <script src="vectro.js"></script>
+<style>
+
+
+
+  @media only screen and (max-width: 600px) {
+  /* Mobile-specific styles go here */
+.content h2 {
+    font-size: 16px;
+  }
+
+  .box,
+  .box2 {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .background-img {
+    height: 300px;
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .box,
+  .box2 {
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
+    
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.container{  padding-top: 20px;
+  padding-bottom: 20px;}
+body{
+background-image: url("https://u.cubeupload.com/Sephiroth2022/hdwallpapersgoldenwa.jpg");
+}
+
+.background-img{
+  
+height: 400px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% auto;
+  padding:20px;
+  border: 1px solid #BF40BF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #bec3e3;
+  position: relative;
+}
+
+.content h2{ font-size:19px;}
+
+.box{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 325px;
+  height: 325px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(119 130 202);
+  border: 2px solid #BF40BF;
+  color: #BF40BF;
+  padding: 20px;
+}
+
+.box2{
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 325px;
+  height: 325px;
+  background: #BF40BF;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(119 130 202);
+  border: 2px solid #BF40BF;
+  color: #ffffff;
+  padding: 20px;
+}
+
+
+.box .content2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: #BF40BF;
+  padding: 20px;
+}
+
+
+.box:before{
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.5s;
+  pointer-events: none;
+}
+
+.box:hover:before{
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+
+.box .content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgb(23, 32, 90);
+  border: 2px solid #2a3cad;
+  color: #BF40BF;
+  padding: 20px;
+}
+}
+
+.box span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  
+}
+
+.box span:nth-child(1)
+{
+  transform:rotate(0deg);
+}
+
+.box span:nth-child(2)
+{
+  transform:rotate(90deg);
+}
+
+.box span:nth-child(3)
+{
+  transform:rotate(180deg);
+}
+
+.box span:nth-child(4)
+{
+  transform:rotate(270deg);
+}
+
+.box span:before
+{
+  content: '';
+  position: absolute;
+  width:100%;
+  height: 2px;
+  background: #BF40BF;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+  transform:scaleX(0);
+  transform-origin: left;
+  }
+  50%
+  {
+    transform:scaleX(1);
+  transform-origin: left;
+  }
+  50.1%
+  {
+    transform:scaleX(1);
+  transform-origin: right;
+    
+  }
+  
+  100%
+  {
+    transform:scaleX(0);
+  transform-origin: right;
+    
+  }
+  
+  
+} 
+
+
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+
+
+body { 
+ background-image: url("https://u.cubeupload.com/Sephiroth2022/hdwallpapersgoldenwa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  color: #fff; 
+  position: relative;
+  margin:0 auto;
+}
+
+
+	
+.chrome {
+  position: relative;
+  text-align: center; 
+background-image: -webkit-linear-gradient(#74848d 0%, #970eea 46%, #BF40BF 50%, #32120E 54%, #ff7cfb 58%, #9e78a8 90%, rgb(148 22 203) 100%);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px #f5f5f5;
+  font-size: 130px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+}
+
+
+
+.chrome:before {
+  content: 'xristinakii';
+  position: absolute;
+ center: 0;
+  top: 0;
+  z-index: 10;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-position:-680px 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  padding-right: 300px;
+  -webkit-animation-name: chrome_effect;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
+@-webkit-keyframes chrome_effect {
+  0% {background-position:-680px 0;}
+  10% {background-position:420px 0;}
+  100% {background-position:420px 0;}
+}
+
+@-webkit-keyframes cop_before_effect {
+  0% {
+    left: 51px;
+    top: 74px;
+    opacity: 0;}
+  
+  15% {
+    left: 51px;
+    top: 74px;
+    opacity: 1;}
+  
+  30% {
+    left: 51px;
+    top: 74px;
+    opacity: 0;}
+  
+  35% {
+    left: 370px;
+    top: 45px;
+    opacity: 0;}
+   
+  50% {
+    left: 370px;
+    top: 45px;
+    opacity: 1;}
+  
+  65% {
+    left: 370px;
+    top: 45px;
+    opacity: 0;}
+  
+  70% {
+    left: 564px;
+    top: 74px;
+    opacity: 0;}
+   
+  85% {
+    left: 564px;
+    top: 74px;
+    opacity: 1;}
+  
+  100% {
+    left: 564px;
+    top: 74px;
+    opacity: 0;}
+}
+
+@-webkit-keyframes cop_after_effect {
+  0% {
+    left: 90px;
+    top: 32px;
+    opacity: 0;}
+  
+  15% {
+    left: 90px;
+    top: 32px;
+    opacity: 1;}
+  
+  30% {
+    left: 90px;
+    top: 32px;
+    opacity: 0;}
+  
+  35% {
+    left: 413px;
+    top: 11px;
+    opacity: 0;}
+   
+  50% {
+    left: 413px;
+    top: 11px;
+    opacity: 1;}
+  
+  65% {
+    left: 413px;
+    top: 11px;
+    opacity: 0;}
+  
+  70% {
+    left: 603px;
+    top: 32px;
+    opacity: 0;}
+   
+  85% {
+    left: 603px;
+    top: 32px;
+    opacity: 1;}
+  
+  100% {
+    left: 603px;
+    top: 32px;
+    opacity: 0;}
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font:100%/1.6 Roboto,sans-serif;
+  color:#333;
+  background-size: cover;
+  
+}
+
+@keyframes jiggle {
+  
+  0% {
+    transform:rotate(0deg) translateY(0px);
+  }
+
+  50% {
+    transform:rotate(13deg) translateY(5px);
+  }
+  
+  
+}
+
+span {
+  display: inline-block;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+  color: blue;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 40px;
+  border:3px solid blue;
+  border-right: none;
+  border-left:none;
+  transition:0.8s ease;
+  &:hover {
+    transform:scale(1.5) rotate(-5deg);
+  }
+  
+  & span:nth-child(1) {
+     animation:.3s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(2) {
+     animation:.3s 0.1s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(3) {
+     animation:.3s 0.2s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(4) {
+     animation:.3s 0.3s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(5) {
+     animation:.5s 0.4s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(6) {
+     animation:.3s 0.5s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  & span:nth-child(7) {
+     animation:.3s 0.6s ease-in-out 
+      infinite forwards jiggle;
+  }
+  
+  
+}
+.container {
+  min-height: 300px;
+  display:grid;
+  justify-content:center;
+  align-content:center;
+  
+}
+
+
+
+
+
+
+
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #BF40BF;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a:hover{
+    background: #ffffff;
+    color: #BF40BF;
+    box-shadow: 0 0 5px #ffffff,
+                0 0 25px #ffffff,
+                0 0 50px #ffffff,
+                0 0 200px #ffffff;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #BF40BF);
+
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#BF40BF);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#BF40BF);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#BF40BF);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ffff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+     font-weight: bold;
+    font-size: 40px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    z-index: 1300;
+
+
+	
+</style>	
+  
+</head>
+ 
+
+<body>
+
+
+<div class="container">	
+<div id="wrapper">
+
+  <h2 class="chrome"><span class="vectro-body">xristinakii</span></h2> </div>
+	
+<div> 
+	
+	<a target="_blank" href="indexradio.html"> 
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+         𝑹𝒂𝒅𝒊𝒐  
+    </a>
+	
+	<a target="_blank" href="indexgifs.html"> 
+        <span></span> 
+        <span></span>
+        <span></span>
+        <span></span>
+         𝑮𝒊𝒇𝒔  
+    </a>
+    <a target="_blank" href="indexdj.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     𝑫𝑱 𝑷𝒉𝒐𝒕𝒐𝒔
+    </a>
+	
+	
+    <a target="_blank" href="indexpcback.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        𝑷𝒄𝑩𝒂𝒄𝒌
+    </a>
+    <a target="_blank" href="indexbgs.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+       𝑩𝒂𝒄𝒌𝒈𝒓𝒐𝒖𝒏𝒅𝒔
+    </a>
+    
+   
+  </div>
+ </div>
+<div class="container">
+	
+
+  
+ <div class="background-img">
+      <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content">
+        
+          <p><img src="https://u.cubeupload.com/Sephiroth2022/Screenshot3.png" width="300" height="300"</p>
+	      </div>
+        
+      </div>
+	 
+<div class="box2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="content2">
+        
+          <p>𝑴𝒚 𝒄𝒉𝒂𝒕𝒔: </p>
+		</br>
+	  <p> ➤ 𝒙𝒂𝒕.𝒄𝒐𝒎/𝒓𝒂𝒅𝒊𝒐𝒇𝒍𝒆𝒗𝒂 </p>
+           <p> ➤ 𝒙𝒂𝒕.𝒄𝒐𝒎/𝒓𝒂𝒅𝒊𝒐𝒂𝒏𝒂𝒅𝒓𝒐𝒎𝒆𝒔𝑾𝑬𝑩𝑹𝑨𝑫𝑰𝑶  </p>
+
+
+	</br>
+	<p>➤ 𝑭𝒐𝒓 𝑮𝒓𝒂𝒑𝒉𝒊𝒄𝒔,</p>
+		<p>𝒂𝒅𝒅 𝒎𝒆 /𝒇1416872511  𝒂𝒏𝒅 𝒑𝒄 𝒎𝒆</p>
+		
+	</br>
+	      </div>
+        
+      </div>	
+  
+  </div>
+	
+
+	 
+   
+		
+	
+	
+	
+<h2 style="text-align:center; font-size:15px; color: #BF40BF;">©𝑨𝒍𝒍 𝒓𝒊𝒈𝒉𝒕𝒔 𝒓𝒆𝒔𝒆𝒓𝒗𝒆𝒅 𝒇𝒐𝒓 𝒕𝒉𝒊𝒔 𝑮𝒂𝒍𝒍𝒆𝒓𝒚 𝑻𝒉𝒆𝒎𝒆 𝒕𝒐  (𝑺𝒆𝒑𝒉𝒊𝒓𝒐𝒕𝒉 𝟕𝟎𝟎𝟎𝟕𝟎𝟎𝟎) 
+	𝑫𝒐 𝒏𝒐𝒕 𝒄𝒐𝒑𝒚 𝒕𝒉𝒊𝒔 𝒇𝒐𝒓𝒎 𝒐𝒇 𝒆𝒅𝒊𝒕  𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒑𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏!</h2>
+
+<h2 style="text-align:center; font-size:15px; color: #BF40BF;">©𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖! 𝑫𝒊𝒔𝒄𝒐𝒓𝒅: sephiroth0783   </h2>
+	
+	
+  </div>
+</div>
+       
+</div> 
+ 
+	
+	
+
+	<!-- Copyright (c) For editing, Seph (70007000) -->
+<!-- Copyright (c) name letters  https://codepen.io/boldfacedesign/pen/DpXjzY -->
+<!-- Copyright (c) square box animation https://codepen.io/uiswarup/pen/RBByzW -->
+
+  
+  
+  
+ <body>
+</html>
+  
