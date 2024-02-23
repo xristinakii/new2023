@@ -1,192 +1,123 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pstyle  Store</title>
-    <style>
-        /* CSS styles */
+  <title>Pstyle</title>
+  <style>
+    body {
+      background-image: url("https://u.cubeupload.com/Sephiroth2022/hdwallpapersgoldenwa.jpg");
+      background-size: cover;
+    }
 
-        @media only screen and (max-width: 600px) {
-  /* Mobile-specific styles go here */
-.content h2 {
-    font-size: 16px;
-  }
-
-  .box,
-  .box2 {
+   header {
+    background-color: #9a2df5a6;
+    color: #fff;
     padding: 10px;
-  }
+    text-align: center;
+}
 
-  .container {
-    padding: 10px;
-  }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
 
-  .background-img {
-    height: 300px;
-    width: 90%;
-    margin: 10% auto;
-  }
+    .box {
+      width: 450px;
+      height: 300px;
+      margin: 10px;
+      background-color:#BF40BF ;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-  .box,
-  .box2 {
-    width: 250px;
-    height: 250px;
-    left: 50%;
-    transform: translateX(-50%);
-  }  
-    
-}  
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #204b7ca6;
-        }
-        .sephiroth-header {
-            background-color: #a2df5a6;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        .sephiroth-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .sephiroth-menu {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .sephiroth-menu ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-        .sephiroth-menu li {
-            margin-right: 20px;
-        }
-        .sephiroth-menu li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .sephiroth-image-item {
-            display: inline-block;
-            width: 10%;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .sephiroth-image-item img {
-            width: 100%;
-            max-height: 450px;
-        }
-        .sephiroth-modal {
-            display: none;
-            position: fixed;
-            z-index: 999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        .sephiroth-modal-content {
-            display: block;
-            margin: 50px auto;
-            width: 80%;
-            max-width: 800px;
-            max-height: 80%;
-        }
-        .sephiroth-modal-content img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            max-height: 100%;
-        }
-        .sephiroth-close-button {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    .box img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="sephiroth-container">
-        <header class="sephiroth-header">
-            <h1>Sephiroth's  Store</h1>
-            <h1>Click to enlarge image</h1>
-            <nav class="sephiroth-menu">
-                <ul>
-                    <li><a href="#pcback">Older models</a></li>
-                    <li><a href="#outer">Latest models</a></li>
-                </ul>
-            </nav>
-        </header>
-
-
-<section id="outer">
-            <h2>Latest models</h2>
-
-    <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/D0qHBTN6/pstyle.png')">
-                <img src="https://i.postimg.cc/D0qHBTN6/pstyle.png" alt="Image 1">
-                <h3>P 1</h3>
-                <p>Price: 250 xats</p>
-            </div>
+  
+ <header> <h1 style="text-align: center;">Pstyle</h1>
+</header>
+  
+  <div class="container">
     
-           
-
-
-    
-           
-
-            
-           
-
-            
-            <div class="sephiroth-image-item" onclick="sephirothOpenModal('.jpg')">
-                <img src="..jpg" alt="Image 1">
-                <h3>........</h3>
-                <p>Price: 250 xats</p>
-            </div>
-
-
-            <!-- Add more older model images here -->
-        </section>
-
        
-
-        
-
+ <div class="box">
+      <a href="https://i.postimg.cc/1X8hppMK/pstyle.png" target="_blank">
+        <img src="https://i.postimg.cc/1X8hppMK/pstyle.png" alt="Image 1">
+      </a>
+      <h3>NUM 1</h3>
+      <p>250 xats</p>
     </div>
 
-    <div class="sephiroth-modal" id="sephirothModal">
-        <div class="sephiroth-modal-content">
-            <span class="sephiroth-close-button" onclick="sephirothCloseModal()">&times;</span>
-            <img id="sephirothModalImage">
-        </div>
+   
+<div class="box">
+      <a href="https://i.postimg.cc/bY3PDvYJ/4.png" target="_blank">
+        <img src="https://i.postimg.cc/bY3PDvYJ/4.png" alt="Image 1">
+      </a>
+      <h3>NUM 2</h3>
+      <p>250 xats</p>
     </div>
+  
 
-    <script>
-        var sephirothModal = document.getElementById("sephirothModal");
-        var sephirothModalImg = document.getElementById("sephirothModalImage");
+ <div class="box">
+      <a href="https://i.postimg.cc/c4mVQhnR/3.png" target="_blank">
+        <img src="https://i.postimg.cc/c4mVQhnR/3.png" alt="Image 1">
+      </a>
+      <h3>NUM 3</h3>
+      <p>250 xats</p>
+    </div>
+   <div class="box">
+      <a href="https://i.postimg.cc/SsFsvP0P/4.png" target="_blank">
+        <img src="https://i.postimg.cc/SsFsvP0P/4.png" alt="Image 1">
+      </a>
+      <h3>NUM 4</h3>
+      <p>250 xats</p>
+    </div>  
 
-        function sephirothOpenModal(imageUrl) {
-            sephirothModal.style.display = "block";
-            sephirothModalImg.src = imageUrl;
-        }
+ <div class="box">
+      <a href="https://i.postimg.cc/br44zNWT/5.png" target="_blank">
+        <img src="https://i.postimg.cc/br44zNWT/5.png" alt="Image 1">
+      </a>
+      <h3>NUM 5</h3>
+      <p>250 xats</p>
+    </div>  
 
-        function sephirothCloseModal() {
-            sephirothModal.style.display = "none";
-        }
-    </script>
+
+ <div class="box">
+      <a href="https://i.postimg.cc/BvJs94v6/pstyle.png" target="_blank">
+        <img src="https://i.postimg.cc/BvJs94v6/pstyle.png" alt="Image 1">
+      </a>
+      <h3>NUM 6</h3>
+      <p>250 xats</p>
+    </div>  
+
+
+<div class="box">
+      <a href="https://i.postimg.cc/tTCxgKBR/pstyle.png" target="_blank">
+        <img src="https://i.postimg.cc/tTCxgKBR/pstyle.png" alt="Image 1">
+      </a>
+      <h3>NUM 7</h3>
+      <p>250 xats</p>
+    </div>  
+
+<div class="box">
+      <a href="https://i.postimg.cc/xdrKLpKb/pstyle.png" target="_blank">
+        <img src="https://i.postimg.cc/xdrKLpKb/pstyle.png" alt="Image 1">
+      </a>
+      <h3>NUM 8</h3>
+      <p>250 xats</p>
+    </div>  
+    
+<div class="container">
+
+  
 </body>
 </html>
