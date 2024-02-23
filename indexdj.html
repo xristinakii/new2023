@@ -1,17 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ptyle  Store</title>
+    <title>Pstyle  Store</title>
     <style>
         /* CSS styles */
-header {
-    background-color: #9a2df5a6;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+
         @media only screen and (max-width: 600px) {
   /* Mobile-specific styles go here */
 .content h2 {
@@ -35,9 +29,9 @@ header {
 
   .box,
   .box2 {
-    width: 450px;
-    height: 400px;
-    left: 90%;
+    width: 250px;
+    height: 250px;
+    left: 50%;
     transform: translateX(-50%);
   }  
     
@@ -46,10 +40,14 @@ header {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-           background-image: url("https://u.cubeupload.com/Sephiroth2022/hdwallpapersgoldenwa.jpg");
-            background-size: cover;
+            background-color: #204b7ca6;
         }
-      
+        .sephiroth-header {
+            background-color: #a2df5a6;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
         .sephiroth-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -100,7 +98,7 @@ header {
             margin: 50px auto;
             width: 80%;
             max-width: 800px;
-            max-height: 500%;
+            max-height: 80%;
         }
         .sephiroth-modal-content img {
             display: block;
@@ -123,24 +121,49 @@ header {
 </head>
 <body>
     <div class="sephiroth-container">
-        <header> <h1 style="text-align: center;">Pstyle Store</h1>
-</header>
+        <header class="sephiroth-header">
+            <h1>Sephiroth's  Store</h1>
+            <h1>Click to enlarge image</h1>
+            <nav class="sephiroth-menu">
+                <ul>
+                    <li><a href="#pcback">Older models</a></li>
+                    <li><a href="#outer">Latest models</a></li>
+                </ul>
+            </nav>
+        </header>
 
 
 <section id="outer">
-            <h2> models</h2>
+            <h2>Latest models</h2>
 
     <div class="sephiroth-image-item" onclick="sephirothOpenModal('https://i.postimg.cc/D0qHBTN6/pstyle.png')">
                 <img src="https://i.postimg.cc/D0qHBTN6/pstyle.png" alt="Image 1">
-                <h3>P 01</h3>
+                <h3>P 1</h3>
                 <p>Price: 250 xats</p>
             </div>
     
-  
+           
+
+
     
-    
+           
+
+            
+           
+
+            
+            <div class="sephiroth-image-item" onclick="sephirothOpenModal('.jpg')">
+                <img src="..jpg" alt="Image 1">
+                <h3>........</h3>
+                <p>Price: 250 xats</p>
+            </div>
+
+
             <!-- Add more older model images here -->
-        </section>    
+        </section>
+
+       
+
         
 
     </div>
