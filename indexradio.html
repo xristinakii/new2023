@@ -87,8 +87,113 @@
 </head>
 <body>
 
-<h1>Paquete</h1>
+<h1>Pagina lor</h1>
 
+<div id="packages-container"></div>
+
+<script>
+    async function fetchPackageFiles() {
+        const repoOwner = 'king9212';         // Numele utilizatorului GitHub
+        const repoName = 'gallery2024';      // Numele repository-ului
+        const packageFolder = 'pachete';     // Folderul cu fișierele din repository
+        const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${packageFolder}`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+
+            return data.filter(item => item.name.endsWith('.gif')).map(file => file.name);
+        } catch (error) {
+            console.error('Failed to fetch files:', error);
+            return [];
+        }
+    }
+
+    function groupFilesByPackage(files) {
+        const packages = {};
+
+        files.forEach(file => {
+            const match = file.match(/(gif|pcbackgif|pstylegif)(\d+)/);
+            if (match) {
+                const type = match[1];
+                const number = match[2];
+                if (!packages[number]) {
+                    packages[number] = {};
+                }
+                packages[number][type] = `https://raw.githubusercontent.com/king9212/gallery2024/main/pachete/${file}`;
+            }
+        });
+
+        return Object.fromEntries(Object.entries(packages).filter(([_, value]) => value.gif || value.pcbackgif || value.pstylegif));
+    }
+
+    function createPackageHTML(packageNumber, files) {
+        const packageDiv = document.createElement('div');
+        packageDiv.classList.add('package');
+
+        const imagesDiv = document.createElement('div');
+        imagesDiv.classList.add('package-images');
+
+        if (files.gif) {
+            const gifImg = document.createElement('img');
+            gifImg.src = files.gif;
+            gifImg.alt = `Gif ${packageNumber}`;
+            gifImg.classList.add('gif-img');
+            imagesDiv.appendChild(gifImg);
+        }
+
+        if (files.pstylegif) {
+            const pstyleGifImg = document.createElement('img');
+            pstyleGifImg.src = files.pstylegif;
+            pstyleGifImg.alt = `PStyle Gif ${packageNumber}`;
+            pstyleGifImg.classList.add('pstylegif-img');
+            imagesDiv.appendChild(pstyleGifImg);
+        }
+
+        const pcBackDiv = document.createElement('div');
+        if (files.pcbackgif) {
+            const pcBackImg = document.createElement('img');
+            pcBackImg.src = files.pcbackgif;
+            pcBackImg.alt = `PCBack Gif ${packageNumber}`;
+            pcBackImg.classList.add('pcback-img');
+            pcBackDiv.appendChild(pcBackImg);
+        }
+
+        const nameDiv = document.createElement('div');
+        nameDiv.classList.add('name');
+        nameDiv.textContent = `Pachet ${packageNumber}`;
+
+        // Preț pentru toate pachetele de 2000 xats
+        const priceDiv = document.createElement('div');
+        priceDiv.classList.add('price');
+        priceDiv.textContent = `Preț: 1500 xats`;
+
+        packageDiv.appendChild(imagesDiv);
+        packageDiv.appendChild(pcBackDiv);
+        packageDiv.appendChild(nameDiv);
+        packageDiv.appendChild(priceDiv);
+
+        return packageDiv;
+    }
+
+    async function displayPackages() {
+        const files = await fetchPackageFiles();
+        const groupedFiles = groupFilesByPackage(files);
+        const packagesContainer = document.getElementById('packages-container');
+        packagesContainer.innerHTML = '';
+
+        Object.keys(groupedFiles).forEach(packageNumber => {
+            const packageHTML = createPackageHTML(packageNumber, groupedFiles[packageNumber]);
+            packagesContainer.appendChild(packageHTML);
+        });
+    }
+
+    displayPackages();
+</script>
+
+</body>
+</html>
 
   
   <div class="container">
