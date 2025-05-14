@@ -1,47 +1,91 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Players And Clock Store</title>
-  <style>
-    body {
-      background-image: url("https://i.postimg.cc/C548DM8m/gold-texture.jpg");
-      background-size: cover;
-    }
-  header {
-    background-color: #9a2df5a6;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-    .container {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Pachetelor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0c1575; /* Fundal albastru deschis */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            min-height: 100vh;
+            overflow-y: auto;
+            color: #fff; /* Text alb pentru contrast */
+        }
 
-    .box {
-      width: 450px;
-      height: 400px;
-      margin: 10px;
-      background-color:#9a2df5a6;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+        h1 {
+            margin-top: 20px;
+            color: #1E90FF; /* Albastru luminos */
+            text-shadow: 0 0 10px rgba(30, 144, 255, 0.7); /* Albastru luminos Glow */
+            font-size: 3em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #1E90FF, #00008B); /* Albastru și albastru închis */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGlow 1.5s ease-in-out infinite;
+        }
 
-    .box img {
-      max-width: 728%;
-      max-height:486%;
-      cursor: pointer;
-    }
-  </style>
+        .package {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #00008B; /* Albastru închis */
+            padding: 10px;
+            background-color: rgba(0, 0, 128, 0.8); /* Albastru semi-transparent */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(30, 144, 255, 0.7); /* Albastru luminos Glow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 40px;
+            width: 500px; /* Mărim lățimea containerului */
+            max-width: 100%;
+            box-sizing: border-box;
+            height: auto;
+        }
+
+        .package img {
+            border-radius: 10px;
+            object-fit: contain; /* Impiedică deformarea imaginii */
+            width: 100%;
+            height: auto;
+        }
+
+        .name, .price {
+            margin-top: 10px;
+            color: #1E90FF; /* Albastru luminos */
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(30, 144, 255, 0.7); /* Glow albastru luminos */
+        }
+
+        .package-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .gif-img, .pstylegif-img, .pcback-img {
+            width: 300px;
+            height: auto;
+        }
+
+        .pcback-img {
+            margin-top: 20px; /* Spațiu vertical între pstylegif și pcbackgif */
+        }
+
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 5px rgba(30, 144, 255, 0.5); }
+            50% { text-shadow: 0 0 15px rgba(30, 144, 255, 1); }
+            100% { text-shadow: 0 0 5px rgba(30, 144, 255, 0.5); }
+        }
+    </style>
 </head>
 <body>
-   <header> <h1 style="text-align: center;">Players And Clock Store</h1>
-</header>
+
   
   <div class="container">
     <div class="box">
